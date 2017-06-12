@@ -1,0 +1,12 @@
+// Place all the styles related to the mynotes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Bootstrap 3
+@import "bootstrap";
+@import "font-awesome";
+@import "summernote";
+@import "codemirror";
+@import "codemirror/themes/solarized";
+//@import "posts";
+body {padding-top:3em;}

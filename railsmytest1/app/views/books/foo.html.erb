@@ -1,0 +1,8 @@
+<h1>Books#foo</h1>
+<p>Find me in app/views/books/foo.html.erb</p>
+
+<%= form_for @search, url: {action: :foo_res} do |f| %>
+    <%= f.text_field :keyword1, size:20 %>
+    <%= f.text_field :keyword2, size:50 %>
+    <%= f.submit '検索' %>
+<% end %>
