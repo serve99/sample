@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mynote_texts
   get 'books/foo'
 
   get 'books/foo_res'

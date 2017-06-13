@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mynote Texts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keyword1</th>
+      <th>Keyword2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mynote_texts.each do |mynote_text| %>
+      <tr>
+        <td><%= mynote_text.keyword1 %></td>
+        <td><%= mynote_text.keyword2 %></td>
+        <td><%= link_to 'Show', mynote_text %></td>
+        <td><%= link_to 'Edit', edit_mynote_text_path(mynote_text) %></td>
+        <td><%= link_to 'Destroy', mynote_text, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mynote text', new_mynote_text_path %>
