@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Keyword1:</strong>
+  <%= @mynote_text.keyword1 %>
+</p>
+
+<p>
+  <strong>Keyword2:</strong>
+  <%= @mynote_text.keyword2 %>
+</p>
+
+<%= link_to 'Edit', edit_mynote_text_path(@mynote_text) %> |
+<%= link_to 'Back', mynote_texts_path %>
